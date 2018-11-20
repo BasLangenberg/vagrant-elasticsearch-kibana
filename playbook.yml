@@ -1,0 +1,7 @@
+- hosts: all
+  vars:
+    elasticsearch_network_host: 0.0.0.0
+  roles:
+    - role: geerlingguy.java
+    - role: geerlingguy.elasticsearch
+    - role: geerlingguy.kibana
